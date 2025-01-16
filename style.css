@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -12,6 +12,7 @@ body {
 
 }
 
+/* Estilos para o body para garantir que a calculadora esteja centralizada na tela */
 .calculator {
     width: 300px;
     background-color: #f7f7f7;
@@ -23,7 +24,9 @@ body {
     overflow: hidden;
    
 }
+/* Estilo da calculadora com borda, arredondamento e sombra */
 
+/* Estilos para a área de exibição do resultado */
 .result {
 
     height: 70px;
@@ -38,13 +41,14 @@ body {
     margin: 0 auto;
     margin-bottom: 15px;
 }
-
+/* Estilos dos botões da calculadora */
 .buttons {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 3px;
 }
 
+/* Estilo básico para todos os botões */
 .buttons button {
 display: flex;
 justify-content: center;
@@ -59,11 +63,14 @@ outline: none;
 cursor: pointer;
 }
 
+
+/* Estilo para o botão "0", que ocupa duas colunas na grid */
 .buttons .zero {
     grid-column: span 2;
     background-color: #202020;
 }
 
+/* Cores específicas para cada grupo de botões */
 .bg_grey {
     background-color: #444444;
 }
@@ -80,6 +87,8 @@ cursor: pointer;
     background-color: rgb(173, 0, 0);
 }
 
+
+/* Efeito visual quando o botão é pressionado */
 button:active {
     opacity: 0.9;
 }

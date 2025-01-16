@@ -1,40 +1,50 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!-- Declaração do tipo de documento HTML5. -->
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil. -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres para UTF-8, garantindo a codificação correta de caracteres especiais. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Tornar a página responsiva, ajustando o layout conforme o tamanho da tela. -->
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS externo, que estiliza a página. -->
    
-    <title>Calculadora</title>
+    <title>Calculadora</title> <!-- Título da página, que aparece na aba do navegador. -->
 </head>
 <body>
-    <div class="calculator">
-        <div class="result">0</div>
-        <div class="buttons">
-        <button class="bg_grey">C</button>
-        <button class="bg_grey">±</button>
-        <button class="bg_grey">%</button>
-        <button class="bg_orange">÷</button>
+    <div class="calculator"> <!-- Div principal que envolve a calculadora. -->
+        <div class="result">0</div> <!-- Exibição do resultado da operação, inicialmente mostrando 0. -->
+        <div class="buttons"> <!-- Div que agrupa todos os botões da calculadora. -->
+            <!-- Botões de operação e números -->
+            <button class="bg_grey">C</button> <!-- Botão para limpar a entrada/resultado. -->
+            <button class="bg_grey">±</button> <!-- Botão para alternar o sinal do número. -->
+            <button class="bg_grey">%</button> <!-- Botão para calcular a porcentagem. -->
+            <button class="bg_orange">÷</button> <!-- Botão para divisão. -->
 
-        <button class="bg_light_grey">7</button>
-        <button class="bg_light_grey">8</button>
-        <button class="bg_light_grey">9</button>
-        <button class="bg_orange">x</button>
-        <button class="bg_light_grey">4</button>
-        <button class="bg_light_grey">5</button>
-        <button class="bg_light_grey">6</button>
-        <button class="bg_orange">-</button>
-        <button class="bg_light_grey">1</button>
-        <button class="bg_light_grey">2</button>
-        <button class="bg_light_grey">3</button>
-        <button class="bg_orange">+</button>
+            <!-- Botões de números. -->
+            <button class="bg_light_grey">7</button> 
+            <button class="bg_light_grey">8</button> 
+            <button class="bg_light_grey">9</button> 
 
-        <button class="zero">0</button>
-        <button class="bg_light_grey">,</button>
-        <button class="bg_red">=</button>
-    </div>
+            <button class="bg_orange">x</button> <!-- Botão para multiplicação. -->
 
-</div>
-<script src="main.js"></script>
+             <!-- Botões de números. -->
+            <button class="bg_light_grey">4</button> 
+            <button class="bg_light_grey">5</button> 
+            <button class="bg_light_grey">6</button> 
+
+            <button class="bg_orange">-</button> <!-- Botão para subtração. -->
+
+             <!-- Botões de números. -->
+            <button class="bg_light_grey">1</button> 
+            <button class="bg_light_grey">2</button> 
+            <button class="bg_light_grey">3</button> 
+
+            <button class="bg_orange">+</button> <!-- Botão para adição. -->
+
+            <button class="zero">0</button> <!-- Botão do número 0. -->
+
+            <button class="bg_light_grey">,</button> <!-- Botão para vírgula, utilizado para separar casas decimais. -->
+            <button class="bg_red">=</button> <!-- Botão de igual, pode ser substituido pela tecla enter -->
+        </div> <!-- Fim da div de botões -->
+    </div> <!-- Fim da div calculadora -->
+    
+    <script src="main.js"></script> <!-- Inclusão do arquivo JavaScript externo responsável pela lógica da calculadora. -->
 </body>
 </html>
